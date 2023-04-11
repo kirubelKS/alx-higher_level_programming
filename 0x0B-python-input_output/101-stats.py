@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-# 101-stats.py
-
 """Reads from standard input and computes metrics.
 After every ten lines or the input of a keyboard interruption (CTRL + C),
 prints the following statistics:
@@ -34,7 +32,6 @@ if __name__ == "__main__":
                 count = 1
             else:
                 count += 1
-
             line = line.split()
 
             try:
@@ -52,7 +49,6 @@ if __name__ == "__main__":
                 pass
 
         print_stats(size, status_codes)
-
     except KeyboardInterrupt:
         print_stats(size, status_codes)
-        raise
+        raise  
